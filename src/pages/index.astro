@@ -4,12 +4,12 @@ import ThemeIcon from "../components/ThemeIcon.astro";
 ---
 
 <Layout title="Alarado Homepage">
-	<div
-		class="max-w-[1440px] m-auto h-screen w-full bg-white p-5 text-gray-400 text-lg"
-	>
-		<body class="bg-blue-500">
+	<body class="dark:bg-dark1">
+		<div
+			class="max-w-[1440px] m-auto h-screen w-full p-5 text-gray-400 text-lg"
+		>
 			<nav
-				class="relative px-4 py-4 flex justify-between items-center bg-white"
+				class="relative px-4 py-4 flex justify-between items-center"
 			>
 				<a class="text-3xl font-bold leading-none" href="#">
 					<svg
@@ -39,7 +39,8 @@ import ThemeIcon from "../components/ThemeIcon.astro";
 							fill="#223344"></path>
 						<path
 							d="M94.8326 14.064C94.8326 12.688 95.0886 11.48 95.6006 10.44C96.1286 9.39999 96.8406 8.59999 97.7366 8.03999C98.6326 7.47999 99.6326 7.19999 100.737 7.19999C101.681 7.19999 102.505 7.39199 103.209 7.77599C103.929 8.15999 104.481 8.66399 104.865 9.28799V7.39199H108.969V20.784H104.865V18.888C104.465 19.512 103.905 20.016 103.185 20.4C102.481 20.784 101.657 20.976 100.713 20.976C99.6246 20.976 98.6326 20.696 97.7366 20.136C96.8406 19.56 96.1286 18.752 95.6006 17.712C95.0886 16.656 94.8326 15.44 94.8326 14.064ZM104.865 14.088C104.865 13.064 104.577 12.256 104.001 11.664C103.441 11.072 102.753 10.776 101.937 10.776C101.121 10.776 100.425 11.072 99.8486 11.664C99.2886 12.24 99.0086 13.04 99.0086 14.064C99.0086 15.088 99.2886 15.904 99.8486 16.512C100.425 17.104 101.121 17.4 101.937 17.4C102.753 17.4 103.441 17.104 104.001 16.512C104.577 15.92 104.865 15.112 104.865 14.088Z"
-							fill="#223344"></path>
+							fill="#223344"
+							></path>
 						<path
 							d="M110.882 14.064C110.882 12.688 111.138 11.48 111.65 10.44C112.178 9.39999 112.89 8.59999 113.786 8.03999C114.682 7.47999 115.682 7.19999 116.786 7.19999C117.666 7.19999 118.466 7.38399 119.186 7.75199C119.922 8.11999 120.498 8.61599 120.914 9.23999V3.02399H125.018V20.784H120.914V18.864C120.53 19.504 119.978 20.016 119.258 20.4C118.554 20.784 117.73 20.976 116.786 20.976C115.682 20.976 114.682 20.696 113.786 20.136C112.89 19.56 112.178 18.752 111.65 17.712C111.138 16.656 110.882 15.44 110.882 14.064ZM120.914 14.088C120.914 13.064 120.626 12.256 120.05 11.664C119.49 11.072 118.802 10.776 117.986 10.776C117.17 10.776 116.474 11.072 115.898 11.664C115.338 12.24 115.058 13.04 115.058 14.064C115.058 15.088 115.338 15.904 115.898 16.512C116.474 17.104 117.17 17.4 117.986 17.4C118.802 17.4 119.49 17.104 120.05 16.512C120.626 15.92 120.914 15.112 120.914 14.088Z"
 							fill="#223344"></path>
@@ -50,10 +51,10 @@ import ThemeIcon from "../components/ThemeIcon.astro";
 				</a>
 				<div class="lg:hidden">
 					<button
-						class="navbar-burger flex items-center text-gray-600 p-3"
+						class="navbar-burger flex items-center p-3 "
 					>
 						<svg
-							class="block h-4 w-4 fill-current"
+							class="block h-4 w-4 fill-current "
 							viewBox="0 0 20 20"
 							xmlns="http://www.w3.org/2000/svg"
 						>
@@ -69,27 +70,27 @@ import ThemeIcon from "../components/ThemeIcon.astro";
 				>
 					<li>
 						<a
-							class="font-bold text-base mx-5 text-gray-400 hover:text-gray-500"
+							class="font-bold text-base mx-5 text-gray-700 text-dark1 dark:text-light1"
 							href="#">About us</a
 						>
 					</li>
 
 					<li>
-						<a class="text-base text-gray-400 mx-5" href="#"
+						<a class="font-bold text-base text-gray-400 mx-5 text-dark3 dark:text-light3" href="#"
 							>Product</a
 						>
 					</li>
 
 					<li>
 						<a
-							class="text-base text-gray-400 mx-5 hover:text-gray-500"
+							class="font-bold text-base text-gray-400 mx-5  text-dark3 dark:text-light3"
 							href="#">Resource</a
 						>
 					</li>
 
 					<li>
 						<a
-							class="text-base text-gray-400 mx-5 hover:text-gray-500"
+							class="font-bold text-base text-gray-400 mx-5  text-dark3 dark:text-light3"
 							href="#">Contact</a
 						>
 					</li>
@@ -99,7 +100,7 @@ import ThemeIcon from "../components/ThemeIcon.astro";
 					</li> -->
 				</ul>
 				<a
-					class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold rounded-xl transition duration-200"
+					class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 dark:bg-dark1 bg-dark1  text-sm font-bold rounded-xl transition duration-200"
 					href="#"
 				>
 					<ThemeIcon />
@@ -111,7 +112,7 @@ import ThemeIcon from "../components/ThemeIcon.astro";
 				>
 				</div>
 				<nav
-					class="fixed top-0 right-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
+					class="fixed top-0 right-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 border-r overflow-y-auto bg-light2 dark:bg-dark1"
 				>
 					<div class="flex items-center mb-8">
 						<a
@@ -121,7 +122,7 @@ import ThemeIcon from "../components/ThemeIcon.astro";
 						</a>
 						<button class="navbar-close">
 							<svg
-								class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+								class="h-6 w-6 text-gray-300 cursor-pointer hover:text-gray-500 dark:text-light1"
 								xmlns="http://www.w3.org/2000/svg"
 								fill="none"
 								viewBox="0 0 24 24"
@@ -139,25 +140,25 @@ import ThemeIcon from "../components/ThemeIcon.astro";
 						<ul>
 							<li class="mb-1">
 								<a
-									class="block p-4 text-4xl font-extrabold text-center text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+									class="block p-4 text-4xl font-extrabold text-center text-dark1 dark:text-light1   rounded"
 									href="#">About Us</a
 								>
 							</li>
 							<li class="mb-1">
 								<a
-									class="block p-4 text-4xl font-extrabold text-center text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+									class="block p-4 text-4xl font-extrabold text-center text-dark3 dark:text-light3  rounded"
 									href="#">Product</a
 								>
 							</li>
 							<li class="mb-1">
 								<a
-									class="block p-4 text-4xl font-extrabold text-center text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-									href="#">Resource</a
+									class="block p-4 text-4xl font-extrabold text-center text-dark3 dark:text-light3  rounded"
+									href="#">Resource</a	
 								>
 							</li>
 							<li class="mb-1">
 								<a
-									class="block p-4 text-4xl font-extrabold text-center text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+									class="block p-4 text-4xl font-extrabold text-center text-dark3  dark:text-light3  rounded"
 									href="#">Contact</a
 								>
 							</li>
@@ -170,8 +171,6 @@ import ThemeIcon from "../components/ThemeIcon.astro";
 									</a
 								>
 							</li> -->
-
-							
 						</ul>
 					</div>
 				</nav>
@@ -180,58 +179,51 @@ import ThemeIcon from "../components/ThemeIcon.astro";
 			<main class="my-12">
 				<div class="flex w-full flex-col lg:flex-row">
 					<div class="order-2 lg:order-1 p-4">
-						<p class="uppercase font-bold text-gray-600">
+						<p class="uppercase font-bold text-base dark:text-light1 text-dark1">
 							😎 Simple way to communicate
 						</p>
 						<h1
-							class="text-slate-900 font-extrabold text-6xl leading-snug pt-10"
+							class="font-extrabold text-6xl leading-snug pt-10 text-dark1 dark:text-light1"
 						>
-							Actions for Accessibility in Design
+							Actions for Accessibility <br>in Design
 						</h1>
-						<p class="pt-12 pb-4 text-xl font-bold">
-							The fastest way to build and deploy websites with <br
-							/>
+						<p class="pt-12 pb-4 text-xl font-bold text-dark3 dark:text-light3">
+							The fastest way to build and deploy websites with 
 							 resusable components.
 						</p>
-						<div
-							class="flex justify-between max-w-xs items-center"
-						>
+						<div class="flex justify-between max-w-[340px] items-center">
 							<button
-								class=" bg-blue-700 rounded-3xl font-bold text-white px-8 py-4 text-base"
+								class="rounded-2xl font-bold px-10 py-4 text-base bg-blue text-light2 "
 								>GET STARTED</button
 							>
 							<a
 								href="#"
-								class="decoration-black underline text-blue-600 font-bold"
+								class="decoration-black underline font-bold text-blue"
 								>Get live demo</a
 							>
 						</div>
 						<div class="mt-12 pb-8">
-							<span class="font-bold text-sm"
+							<span class="font-bold text-base text-dark3"
 								>✔️No credit card required</span
 							>
-							<span class="ml-4 font-bold text-sm  dark:text-white"
+							<span class="ml-4 font-bold text-base text-dark3"
 								>✔️No software to install</span
 							>
-
 						</div>
 					</div>
 
 					<div class="order-1 lg:order-2 flex justify-center p-4">
 						<img
-							
 							src="/assets/hero-image-simple-homepage.png"
 							alt="hero image simple homepage"
-							class="object-cover "
+							class="object-cover"
 						/>
 					</div>
 				</div>
 			</main>
-		</body>
-	</div>
+		</div>
+	</body>
 </Layout>
-
-<style></style>
 
 <script>
 	// Burger menus
